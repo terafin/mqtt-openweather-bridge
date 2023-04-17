@@ -80,7 +80,7 @@ async function query_one_api(callback) {
     url = url + "&lang=" + OPENWEATHER_LANGUAGE
     url = url + "&units=" + OPENWEATHER_UNITS
 
-    logging.debug('openweather url: ' + url)
+    logging.info('querying openweather url: ' + url)
     var error = null
     var body = null
 
@@ -103,7 +103,7 @@ const doPoll = function() {
             health.unhealthyEvent()
             return
         }
-        logging.info('result: ' + JSON.stringify(result))
+        logging.debug('result: ' + JSON.stringify(result))
 
         client.smartPublishCollection(topic_prefix, result, ['minutely', 'hourly', 'daily', 'weather'], mqttOptions)
         const minutely = result.minutely
