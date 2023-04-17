@@ -80,7 +80,7 @@ async function query_one_api(callback) {
     url = url + "&lang=" + OPENWEATHER_LANGUAGE
     url = url + "&units=" + OPENWEATHER_UNITS
 
-    logging.info('openweather url: ' + url)
+    logging.debug('openweather url: ' + url)
     var error = null
     var body = null
 
