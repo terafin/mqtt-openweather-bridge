@@ -105,7 +105,7 @@ const doPoll = function() {
         }
         logging.debug('result: ' + JSON.stringify(result))
 
-        client.smartPublishCollection(topic_prefix, result, ['minutely', 'hourly', 'daily', 'weather'], mqttOptions)
+        client.smartPublishCollection(topic_prefix, result, ['minutely', 'hourly', 'daily', 'weather', 'alerts'], mqttOptions)
         const minutely = result.minutely
         const hourly = result.hourly
         const daily = result.daily
