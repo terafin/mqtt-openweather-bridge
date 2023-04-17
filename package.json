@@ -1,0 +1,29 @@
+{
+    "name": "mqtt-openweather-bridge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/terafin/mqtt-openweather-bridge.git"
+    },
+    "author": "Justin Wood",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/terafin/mqtt-openweather-bridge/issues"
+    },
+    "dependencies": {
+        "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
+        "lodash": "latest",
+        "mqtt": "latest",
+        "interval-promise": "latest",
+        "got": "^11.0.0"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "homepage": "https://github.com/terafin/mqtt-openweather-bridge#readme"
+}
