@@ -17,7 +17,7 @@ Here's an example docker compose:
 version: '3.3'
 services:
   mqtt-openweather-bridge:
-    image: terafin/mqtt-openweather-bridge:latest
+    image: ghcr.io/terafin/mqtt-openweather-bridge:latest
     environment:
       LOGGING_NAME: mqtt-openweather-bridge
       TZ: America/Los_Angeles
